@@ -21,6 +21,7 @@ public class ClassDiagram extends JPanel {
 		for (Entity entity : list) {
 			addUMLClass(entity);
 		}
+		int i;
 		
 	}
 	
