@@ -1,0 +1,215 @@
+<project name="Demo project">
+	<entities>
+		<entity name="AnnotationForTesting">
+			<fields></fields>
+			<methods>
+				<method info="- value( ) : String" />
+			</methods>
+		</entity>
+		<entity name="ClassForTesting">
+			<fields>
+				<field info="+ i : int" />
+				<field info="+ integerList : List" />
+				<field info="- j : double" />
+				<field info="+ c : int" />
+				<field info="+ stringList : List" />
+			</fields>
+			<methods>
+				<method info="- function02( String, int, double) : int" />
+				<method info="- function01( ) : void" />
+			</methods>
+		</entity>
+		<entity name="EnumForTesting">
+			<fields>
+				<field info="+ ENUM$VALUES : EnumForTesting[]" />
+			</fields>
+			<methods>
+				<method info="- values( ) : EnumForTesting[]" />
+				<method info="- valueOf( String) : EnumForTesting" />
+			</methods>
+		</entity>
+		<entity name="InterfaceForTesting">
+			<fields>
+				<field info="- i : int" />
+				<field info="- j : double" />
+			</fields>
+			<methods>
+				<method info="- function02( String, int, double) : int" />
+				<method info="- function01( ) : void" />
+			</methods>
+		</entity>
+		<entity name="Constructors">
+			<fields>
+				<field info="+ visibility : String" />
+				<field info="+ name : String" />
+				<field info="+ params : String[]" />
+			</fields>
+			<methods>
+				<method info="- getName( ) : String" />
+				<method info="- setName( String) : void" />
+				<method info="- getParams( ) : String[]" />
+				<method info="- getVisibility( ) : String" />
+				<method info="- setVisibility( String) : void" />
+				<method info="- setParams( String[]) : void" />
+			</methods>
+		</entity>
+		<entity name="Entity">
+			<fields>
+				<field info="+ name : String" />
+				<field info="+ fields : String[]" />
+				<field info="+ methods : String[]" />
+			</fields>
+			<methods>
+				<method info="- getName( ) : String" />
+				<method info="- getFields( ) : String[]" />
+				<method info="- getMethods( ) : String[]" />
+				<method info="- setName( String) : void" />
+				<method info="- setMethods( String[]) : void" />
+				<method info="- setFields( String[]) : void" />
+			</methods>
+		</entity>
+		<entity name="Fields">
+			<fields>
+				<field info="+ allvisibility : String" />
+				<field info="+ visibility : String" />
+				<field info="+ simpleType : String" />
+				<field info="+ type : String" />
+				<field info="+ name : String" />
+			</fields>
+			<methods>
+				<method info="- getName( ) : String" />
+				<method info="- setName( String) : void" />
+				<method info="- getType( ) : String" />
+				<method info="- getVisibility( ) : String" />
+				<method info="- getSimpleType( ) : String" />
+				<method info="- setVisibility( String) : void" />
+				<method info="- setType( String) : void" />
+				<method info="- setAllvisibility( String) : void" />
+				<method info="- setSimpleType( String) : void" />
+				<method info="- getAllvisibility( ) : String" />
+			</methods>
+		</entity>
+		<entity name="Methods">
+			<fields>
+				<field info="+ allVisibility : String" />
+				<field info="+ visibility : String" />
+				<field info="+ typeReturn : String" />
+				<field info="+ name : String" />
+				<field info="+ params : String[]" />
+			</fields>
+			<methods>
+				<method info="- getName( ) : String" />
+				<method info="- setName( String) : void" />
+				<method info="- getParams( ) : String[]" />
+				<method info="- getVisibility( ) : String" />
+				<method info="- getTypeReturn( ) : String" />
+				<method info="- getAllVisibility( ) : String" />
+				<method info="- setAllVisibility( String) : void" />
+				<method info="- setVisibility( String) : void" />
+				<method info="- setParams( String[]) : void" />
+				<method info="- setTypeReturn( String) : void" />
+			</methods>
+		</entity>
+		<entity name="Project">
+			<fields>
+				<field info="+ name : String" />
+				<field info="+ entities : List" />
+			</fields>
+			<methods>
+				<method info="- getName( ) : String" />
+				<method info="- setName( String) : void" />
+				<method info="- setEntities( List) : void" />
+				<method info="- getEntities( ) : List" />
+			</methods>
+		</entity>
+		<entity name="Relation">
+			<fields>
+				<field info="+ classA : String" />
+				<field info="+ classB : String" />
+				<field info="+ type : String" />
+			</fields>
+			<methods>
+				<method info="- getType( ) : String" />
+				<method info="- getClassA( ) : String" />
+				<method info="- setClassA( String) : void" />
+				<method info="- getClassB( ) : String" />
+				<method info="- setClassB( String) : void" />
+				<method info="- setType( String) : void" />
+			</methods>
+		</entity>
+		<entity name="DemoClassParser">
+			<fields>
+				<field info="+ myClass : Class" />
+			</fields>
+			<methods>
+				<method info="- getName( ) : String" />
+				<method info="- getSuperInterfaces( ) : Class[]" />
+				<method info="- getSimpleName( ) : String" />
+				<method info="- getFields( ) : List" />
+				<method info="- getMethods( ) : List" />
+				<method info="- getConstructors( ) : List" />
+				<method info="- getSuperClass( ) : Class" />
+			</methods>
+		</entity>
+		<entity name="EntityExplorer">
+			<fields>
+				<field info="nullentities : List" />
+				<field info="nullclassesName : String[]" />
+			</fields>
+			<methods>
+				<method info="- getEntityList( ) : List" />
+				<method info="- getEntity( String) : Entity" />
+			</methods>
+		</entity>
+		<entity name="Examples">
+			<fields></fields>
+			<methods>
+				<method info="- main( String[]) : void" />
+				<method info="- exp02( ) : void" />
+				<method info="- exp01( ) : void" />
+			</methods>
+		</entity>
+		<entity name="PackageExplorer">
+			<fields></fields>
+			<methods>
+				<method info="- getClassList( String) : String[]" />
+			</methods>
+		</entity>
+		<entity name="ProjetExplorer">
+			<fields>
+				<field info="+ projectName : String" />
+			</fields>
+			<methods>
+				<method info="- getClassPath( ) : String" />
+				<method info="- getClassesName( ) : String[]" />
+				<method info="- getPackageList( ) : String[]" />
+				<method info="- getAllEntities( ) : List" />
+			</methods>
+		</entity>
+		<entity name="RelationExplorer">
+			<fields>
+				<field info="+ project : ProjetExplorer" />
+			</fields>
+			<methods>
+				<method info="- main( String[]) : void" />
+				<method info="- getExtendsRelations( ) : List" />
+				<method info="- getImplementsRelations( ) : List" />
+				<method info="- getAggregationRelations( ) : void" />
+			</methods>
+		</entity>
+		<entity name="DiagrammeClasses">
+			<fields>
+				<field info="+ serialVersionUID : long" />
+			</fields>
+			<methods></methods>
+		</entity>
+		<entity name="XmlFormater">
+			<fields></fields>
+			<methods>
+				<method info="- persist( String, Project) : void" />
+				<method info="- entityToXml( Entity) : String" />
+				<method info="- projectToXml( Project) : String" />
+			</methods>
+		</entity>
+	</entities>
+</project>
